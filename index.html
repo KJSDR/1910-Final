@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alps Travel Guide - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Hero Section with Background Image */
+    .hero-section {
+      background-image: url('alpshomepage.jpg'); /* Replace with your own image */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Overlay to make the text stand out */
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Slightly darker overlay */
+    }
+
+    .hero-content {
+      z-index: 1; /* Ensures text is above the overlay */
+    }
+
+    /* Custom Forest Green Button Style */
+    .btn-forest-green {
+      background-color: #228B22; /* Forest green */
+      border-color: #228B22; /* Forest green border */
+      color: white; /* Text color white */
+    }
+
+    .btn-forest-green:hover {
+      background-color: #1d7f1d; /* Darker forest green on hover */
+      border-color: #1d7f1d;
+    }
+
+    .btn-forest-green:focus, .btn-forest-green.focus {
+      box-shadow: 0 0 0 0.2rem rgba(34, 139, 34, 0.5); /* Focus shadow */
+    }
+
+    /* Body background changed to Dark Green */
+    body {
+      background-color: #0e3b11; /* Dark Green */
+    }
+
+    /* Section for Summer Hiking and Winter Skiing */
+    .activity-section {
+      text-align: center;
+      margin-top: 50px;
+      color: white; /* White text for content */
+    }
+
+    .activity-section h2 {
+      margin-bottom: 30px;
+    }
+
+    /* Dark Gray Cards */
+    .activity-card {
+      background-color: #333333; /* Dark Gray */
+      color: white; /* White text */
+    }
+
+    .activity-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .activity-card .btn {
+      margin-top: 10px;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #292929; /* Darker footer background */
+      color: white; /* White text */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alps Guide</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="regions.html">Regions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background Image behind Button -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="display-4">Discover the Beauty of the Alps</h1>
+      <p class="lead">Explore the majestic mountains, breathtaking hikes, and charming alpine villages.</p>
+      <a href="regions.html" class="btn btn-forest-green btn-lg">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- Summer Hiking and Winter Skiing Sections -->
+  <div class="activity-section container my-5">
+    <h2>Explore the Alps Through the Seasons</h2>
+    <p class="lead">Whether you're looking to hike through lush meadows in the summer or ski on pristine slopes in the winter, the Alps offer something for everyone, year-round.</p>
+
+    <div class="row">
+      <!-- Summer Hiking -->
+      <div class="col-md-6">
+        <div class="card activity-card">
+          <img src="summerhiking.jpg" class="card-img-top" alt="Summer Hiking">
+          <div class="card-body">
+            <h5 class="card-title">Summer Hiking</h5>
+            <p class="card-text">Discover breathtaking hiking trails in the Alps, where you can explore lush valleys, alpine lakes, and panoramic mountain views.</p>
+            <a href="summer-hiking.html" class="btn btn-forest-green">Explore Summer Hiking</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Winter Skiing -->
+      <div class="col-md-6">
+        <div class="card activity-card">
+          <img src="winterskiing.jpg" class="card-img-top" alt="Winter Skiing">
+          <div class="card-body">
+            <h5 class="card-title">Winter Skiing</h5>
+            <p class="card-text">The Alps are a paradise for winter sports enthusiasts. Enjoy world-class ski resorts, snowboarding, and après-ski activities.</p>
+            <a href="winter-skiing.html" class="btn btn-forest-green">Explore Winter Skiing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Alps Travel Guide. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

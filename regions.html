@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regions - Alps Travel Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #0e3b11; /* Dark forest green background */
+      color: white; /* White text for contrast */
+    }
+
+    .region-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .content {
+      flex-grow: 1;
+    }
+
+    h2, h5 {
+      color: white; /* Ensures headings are white for contrast */
+    }
+
+    .card-body {
+      background-color: #333333; /* Dark gray for region boxes */
+      color: white; /* White text for contrast in region boxes */
+    }
+
+    /* Custom Dark Green Button Style */
+    .btn-forest-green {
+      background-color: #2C6B2F; /* Dark forest green */
+      border-color: #2C6B2F; /* Dark forest green border */
+      color: white; /* White text */
+    }
+
+    .btn-forest-green:hover {
+      background-color: #245c2e; /* Slightly darker green on hover */
+      border-color: #245c2e;
+    }
+
+    .btn-forest-green:focus, .btn-forest-green.focus {
+      box-shadow: 0 0 0 0.2rem rgba(44, 107, 47, 0.5); /* Focus shadow */
+    }
+
+    footer {
+      background-color: #292929; /* Darker green for footer */
+    }
+
+    footer p {
+      color: white; /* White text in footer */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alps Guide</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Regions Section -->
+  <div class="container text-center my-5 content">
+    <h2>Explore the Regions of the Alps</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card region-card">
+          <img src="swissalps.jpg" class="card-img-top" alt="Swiss Alps">
+          <div class="card-body">
+            <h5 class="card-title">Swiss Alps</h5>
+            <p class="card-text">Discover the iconic Matterhorn, Jungfrau, and more.</p>
+            <a href="swiss-alps.html" class="btn btn-forest-green">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card region-card">
+          <img src="frenchalps.webp" class="card-img-top" alt="French Alps">
+          <div class="card-body">
+            <h5 class="card-title">French Alps</h5>
+            <p class="card-text">Explore Chamonix, Annecy, and the beautiful French mountains.</p>
+            <a href="french-alps.html" class="btn btn-forest-green">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card region-card">
+          <img src="germanalps.webp" class="card-img-top" alt="German Alps">
+          <div class="card-body">
+            <h5 class="card-title">Bavarian Alps</h5>
+            <p class="card-text">Enjoy Bavaria's stunning castles and scenic trails.</p>
+            <a href="german-alps.html" class="btn btn-forest-green">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card region-card">
+          <img src="austrianalps.jpg" class="card-img-top" alt="Austrian Alps">
+          <div class="card-body">
+            <h5 class="card-title">Austrian Alps</h5>
+            <p class="card-text">Explore the Tyrolean mountains and picturesque valleys.</p>
+            <a href="austrian-alps.html" class="btn btn-forest-green">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2024 Alps Travel Guide. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Austrian Alps - Alps Travel Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #0e3b11; /* Dark forest green background */
+      color: white; /* White text for contrast */
+    }
+
+    /* Austrian Alps header */
+    .region-header {
+      background-image: url('austrian-alps-header.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0; /* Added padding for header */
+      text-align: center;
+    }
+
+    .region-header h1 {
+      font-size: 3rem;
+    }
+
+    .region-header p {
+      font-size: 1.2rem;
+    }
+
+    /* Region Cards */
+    .region-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      background-color: #333333; /* Dark gray for cards */
+      color: white; /* White text for contrast in cards */
+    }
+
+    /* Button Style */
+    .btn-forest-green {
+      background-color: #2C6B2F; /* Dark forest green */
+      border-color: #2C6B2F; /* Dark forest green border */
+      color: white; /* White text */
+    }
+
+    .btn-forest-green:hover {
+      background-color: #245c2e; /* Slightly darker green on hover */
+      border-color: #245c2e;
+    }
+
+    .btn-forest-green:focus, .btn-forest-green.focus {
+      box-shadow: 0 0 0 0.2rem rgba(44, 107, 47, 0.5); /* Focus shadow */
+    }
+
+    /* For the video iframe */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Space between sections */
+    .container.my-5 {
+      margin-top: 50px; /* Space between sections */
+    }
+
+    footer {
+      background-color: #292929; /* Darker footer background */
+    }
+
+    footer p {
+      color: white; /* White text in footer */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alps Guide</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="regions.html">Regions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Austrian Alps Header -->
+  <div class="region-header">
+    <h1>Explore the Austrian Alps</h1>
+    <p>Known for its majestic peaks, alpine villages, and winter sports, the Austrian Alps offer plenty of outdoor adventure.</p>
+  </div>
+
+  <!-- Embedded Video Section -->
+  <div class="container my-5">
+    <h2>Discover the Beauty of the Austrian Alps</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/QRRIfss2lsU?si=psARdqWGkPWsdX9R" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Region Highlights Section -->
+  <div class="container my-5">
+    <h2>Top Attractions in the Austrian Alps</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card region-card">
+          <img src="grossglockner.jpg" class="card-img-top" alt="Grossglockner">
+          <div class="card-body">
+            <h5 class="card-title">Grossglockner</h5>
+            <p class="card-text">Austria's highest peak, offering stunning panoramic views and great hiking routes.</p>
+            <a href="grossglockner.html" class="btn btn-forest-green">Explore Grossglockner</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card region-card">
+          <img src="hallstatt.jpg" class="card-img-top" alt="Hallstatt">
+          <div class="card-body">
+            <h5 class="card-title">Hallstatt</h5>
+            <p class="card-text">A picturesque lakeside village with breathtaking views and rich history.</p>
+            <a href="hallstatt.html" class="btn btn-forest-green">Explore Hallstatt</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card region-card">
+          <img src="Tyrol.jpg" class="card-img-top" alt="Tyrol">
+          <div class="card-body">
+            <h5 class="card-title">Tyrol</h5>
+            <p class="card-text">A region known for its alpine scenery, ski resorts, and outdoor activities.</p>
+            <a href="tyrol.html" class="btn btn-forest-green">Explore Tyrol</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Map Embed Section -->
+  <div class="container my-5">
+    <h2>Explore the Austrian Alps on the Map</h2>
+    <!-- Embed the iframe map -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86607.29453830639!2d11.2229141607027!3d47.28545871580189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d6ecfe1f8ca73%3A0x9d201c7d281d9b0d!2sInnsbruck%2C%20Austria!5e0!3m2!1sen!2sus!4v1733914947040!5m2!1sen!2sus" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Alps Travel Guide. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

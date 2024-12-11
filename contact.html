@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Alps Travel Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #0e3b11; /* Dark forest green background */
+      color: white; /* White text for contrast */
+    }
+
+    .container {
+      flex-grow: 1;
+    }
+
+    /* Contact Form Modal Styles */
+    .modal-content {
+      background-color: #333333; /* Dark gray background */
+      color: white; /* White text */
+    }
+
+    .modal-header {
+      border-bottom: 1px solid #2C6B2F; /* Green border for header */
+    }
+
+    .modal-footer {
+      background-color: #292929; /* Dark footer */
+    }
+
+    .btn-forest-green {
+      background-color: #2C6B2F; /* Dark forest green */
+      border-color: #2C6B2F;
+      color: white;
+    }
+
+    .btn-forest-green:hover {
+      background-color: #245c2e; /* Slightly darker green on hover */
+      border-color: #245c2e;
+    }
+
+    /* FAQ Section */
+    .accordion-button {
+      background-color: #444444; /* Dark gray for the button */
+      color: white; /* White text */
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #333333; /* Slightly darker gray when expanded */
+      color: white;
+    }
+
+    .accordion-body {
+      background-color: #333333; /* Dark gray for the answer section */
+      color: white; /* White text */
+    }
+
+    footer {
+      background-color: #292929; /* Darker footer */
+    }
+
+    footer p {
+      color: white; /* White text in footer */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Alps Guide</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="regions.html">Regions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-forest-green">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container my-5">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us using the contact form or via the information below.</p>
+    <button class="btn btn-forest-green" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Form</button>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="container my-5">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+            What is the best time to visit the Alps?
+          </button>
+        </h2>
+        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The best time to visit the Alps depends on the activities you want to do. For skiing and snowboarding, winter (December to March) is ideal. For hiking, summer (June to September) offers the best weather and views.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+            Do I need to worry about bears in the Alps?
+          </button>
+        </h2>
+        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            There are bears in the Alps! However if you stick to the designated trails you will be fine, but you should always do your research depending on the area you will be in.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+            What are some must-see places in the Alps?
+          </button>
+        </h2>
+        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Some must-see places in the Alps include the Matterhorn, Mont Blanc, the Grossglockner, the lakes of Hallstatt and Lake Geneva, and the picturesque town of Zermatt.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeadingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+            Is it expensive to travel in the Alps?
+          </button>
+        </h2>
+        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Travel costs in the Alps can vary greatly depending on the season and location. Generally, skiing resorts and mountain areas tend to be more expensive. However, there are options for all budgets, and visiting in the off-season can help lower costs.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2024 Alps Travel Guide. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
